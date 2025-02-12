@@ -292,6 +292,7 @@ DEPENDENCIES
   jbuilder (~> 2.11)
   listen (~> 3.7.1)
   mail (>= 2.8.0.rc1)
+  nokogiri (~> 1.18, >= 1.18.2)
   pg (~> 1.4.3)
   pry-rails (>= 0.3.9)
   puma (>= 5.6.4)
