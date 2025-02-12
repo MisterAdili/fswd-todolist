@@ -36,11 +36,11 @@ var refreshTasks = function(){
     
         $("#tasks").html(htmlString);
 
-        $(".completeButton").on("click", function(){
+        $(".completeButton").off().on("click", function(){
             markTask($(this).data("id"),$(this).data("status")), refreshTasks();
         });
 
-        $(".deleteButton").on("click", function(){
+        $(".deleteButton").off().on("click", function(){
             deleteTask($(this).data("id")), refreshTasks();
         })
 
@@ -49,7 +49,6 @@ var refreshTasks = function(){
         });
 
         $(".filterButton").off().on('click', function(){
-
             $(".filterButton").removeClass("btn-lg active").addClass("btn-sm");
             $(this).removeClass("btn-sm").addClass("btn-lg active");
             switch ($(this).attr('id')){
@@ -65,9 +64,9 @@ var refreshTasks = function(){
                     filterAll = false;
                     filterCompleted = true;
                     break;
-            }
+            };
             refreshTasks();
-        });
+    });
 })};
 
 refreshTasks();
