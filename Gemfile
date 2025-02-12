@@ -49,7 +49,7 @@ gem 'mail', '>= 2.8.0.rc1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.13', require: false
 
-gem 'nokogiri', '~> 1.18', '>= 1.18.2'
+gem 'nokogiri', '~> 1.17'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
