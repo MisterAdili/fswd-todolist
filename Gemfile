@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 require 'logger'
 
-ruby '3.1.2'
+ruby '3.1.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.6.1'
@@ -49,8 +49,6 @@ gem 'mail', '>= 2.8.0.rc1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.13', require: false
 
-gem 'nokogiri', '~> 1.17.2'
-gem 'ffi', '~> 1.17.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
