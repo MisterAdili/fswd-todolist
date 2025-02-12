@@ -50,6 +50,7 @@ gem 'mail', '>= 2.8.0.rc1'
 gem 'bootsnap', '>= 1.13', require: false
 
 gem 'nokogiri', '~> 1.17.2'
+gem 'ffi', '~> 1.17.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
